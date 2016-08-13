@@ -1,7 +1,6 @@
 import React from 'react'
 import SignIn from "./signin"
 import SignUp from "./signup"
-import Logout from "./logout"
 import ReactDOM from 'react-dom'
 import LocalStorageMixin from 'react-localstorage'
 import reactMixin from 'react-mixin'
@@ -84,10 +83,9 @@ class App extends React.Component {
   render () {
     return (
       <Router history={browserHistory}>
-        <Route path="/" component={Body}>
+        <Route path="/sandbox" component={Body}>
           <IndexRoute component={Home}/>
           <Route path="signup" component={SignUp} />
-          <Route path="logout" component={Logout} />
         </Route>
       </Router>
 

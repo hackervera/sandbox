@@ -7,7 +7,7 @@ export default class SignUp extends React.Component {
   }
   submitForm (ev) {
     ev.preventDefault();
-    browserHistory.push('/')
+    browserHistory.push('/sandbox')
   }
   render () {
     return (
