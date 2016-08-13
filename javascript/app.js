@@ -83,7 +83,7 @@ class App extends React.Component {
   render () {
     return (
       <Router history={browserHistory}>
-        <Route path="/sandbox" component={Body}>
+        <Route path="/" component={Body}>
           <IndexRoute component={Home}/>
           <Route path="signup" component={SignUp} />
         </Route>

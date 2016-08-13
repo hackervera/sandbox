@@ -229,7 +229,7 @@
 	        { history: _reactRouter.browserHistory },
 	        _react2.default.createElement(
 	          _reactRouter.Route,
-	          { path: "/sandbox", component: Body },
+	          { path: "/", component: Body },
 	          _react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
 	          _react2.default.createElement(_reactRouter.Route, { path: "signup", component: _signup2.default })
 	        )
@@ -4368,7 +4368,7 @@
 	          null,
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: { pathname: '/sandbox/signup', state: this.props.store } },
+	            { to: { pathname: '/signup', state: this.props.store } },
 	            'Signup'
 	          )
 	        ),
@@ -4402,7 +4402,7 @@
 	    value: function logout(ev) {
 	      ev.preventDefault();
 	      this.props.store.dispatch({ type: "update", name: "name", value: undefined });
-	      _reactRouter.browserHistory.push("/sandbox");
+	      _reactRouter.browserHistory.push("/");
 	    }
 	  }, {
 	    key: 'render',
@@ -10090,7 +10090,7 @@
 	    key: 'submitForm',
 	    value: function submitForm(ev) {
 	      ev.preventDefault();
-	      _reactRouter.browserHistory.push('/sandbox');
+	      _reactRouter.browserHistory.push('/');
 	    }
 	  }, {
 	    key: 'render',
